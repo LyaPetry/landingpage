@@ -1,0 +1,11 @@
+.form{
+  background-color: #CC0C0C;
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title{
+  font-size: 3.5rem;
+  font-family: 'Roboto', sans-serif;
+}
