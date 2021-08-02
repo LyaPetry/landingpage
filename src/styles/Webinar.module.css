@@ -19,7 +19,7 @@
 }
 
 .content {
-  background-color: white;
+  background-color: rgb(233, 233, 230);
   margin: 25px auto;
   width: 80%;
   font-family: 'Roboto', sans-serif;
@@ -33,9 +33,29 @@ display: none;
 }
 
 @media screen and (max-width: 600px){
+  .title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    color:#D6D3D3;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .subtitle{
+    font-size: 1.1rem;
+    color:#D6D3D3;
+    margin-top: 6px;
+    text-align: center;
+    padding: 5px 0px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+  }
+
   .content{
     width: 90%;
-    margin: 25px auto;
+    margin: 5px auto;
     font-family: 'Roboto', sans-serif;
   }
   .pictureLarge{
