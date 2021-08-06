@@ -16,8 +16,12 @@ export default function Index() {
         {!data && <p>Carregando...</p>}
         {!error && data && data.showMessage &&
           <>
-            <h1>{data.title}</h1>
-            <h2> {data.content}</h2>
+            <div className='md:container md:w-10/12  bg-purple-800 mx-auto pt-6 pb-4'>
+              <h1 className='text-center md:uppercase text-xl md:text-3xl font-semibold text-white'>{data.title}</h1>
+            </div>
+            <div className='w-10/12 md:w-9/12 mt-4 md:pt-6 mx-auto text-justify'>
+              <h2 className='pb-4 md:pb-0 md:text-xl'>{data.content}</h2>
+            </div>
           </>
         }
       </div>
@@ -51,7 +55,7 @@ export default function Index() {
 
                 <div className="flex md:flex-row flex-col mt-10 md:mt-10 justify-between mx-2 md:w-full ">
 
-                  <div /* style={{ backgroundColor: '#EEEEEE', color: '#433d49' }} */ className="flex flex-col bg-blue-100 md:mr-2 h-64 rounded p-4 items-center shadow-lg border-r-8 border-purple-600 mb-4 md:mb-auto">
+                  <div className="flex flex-col bg-blue-100 md:mr-2 h-64 rounded p-4 items-center shadow-lg border-r-8 border-purple-600 mb-4 md:mb-auto">
                     <h2 className="font-semibold">Minha Especialidade</h2>
                     <p className="p-4  text-gray-500 text-justify md:font-semibold">
                       Focada em potencializar a lucratividade de pequenas empresas por meio de gerenciamento ativo dos funcionários.
@@ -63,7 +67,7 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div /* style={{ backgroundColor: '#EEEEEE', color: '#433d49' }} */ className="flex flex-col bg-blue-100 md:mr-2 h-64 rounded p-4 items-center md:w-full   shadow-lg border-r-8 border-purple-600 mb-4 md:mb-auto">
+                  <div className="flex flex-col bg-blue-100 md:mr-2 h-64 rounded p-4 items-center md:w-full   shadow-lg border-r-8 border-purple-600 mb-4 md:mb-auto">
                     <h2 className="font-semibold">Minha Graduação</h2>
                     <p className="p-4 md:px-2 text-gray-500 text-justify md:font-semibold tracking-wide">
                       Administração de Empresas - Ênfase em Marketing - Centro Universitário Vale do Iguaçu - União da Vitória - PR
@@ -75,7 +79,7 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div /*style={{  backgroundColor: '#EEEEEE', color: '#433d49' }}*/ className="flex flex-col bg-blue-100 md:mr-1 h-64 rounded p-4 items-center shadow-lg border-r-8 border-purple-600 mb-4 md:mb-auto">
+                  <div className="flex flex-col bg-blue-100 md:mr-1 h-64 rounded p-4 items-center shadow-lg border-r-8 border-purple-600 mb-4 md:mb-auto">
                     <h2 className="font-semibold">Meu Mestrado</h2>
                     <p className="p-4  text-gray-500 text-justify md:font-semibold tracking-wide">
                       Mestrado Internacional em Administração e Direção de Empresas - Universidad Europea del Atlantico - Santander - Espanha
