@@ -2,8 +2,9 @@ import useSWR from 'swr'
 import Image from 'next/image'
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 import profilePictureMain from '../public/me2.png'
-import facebookIcon from '../public/facebook.png'
+
 import instagramIcon from '../public/instagram.png'
+import Link from 'next/link'
 
 export default function Index() {
 
@@ -55,6 +56,20 @@ export default function Index() {
 
                 <div className="flex md:flex-row flex-col mt-10 md:mt-10 justify-between mx-2 md:w-full ">
 
+                  <div className="md:hidden flex flex-col bg-blue-100 md:mr-2 h-64 rounded p-4 items-center shadow-lg border-r-8 border-purple-600 mb-4 md:mb-auto">
+                    <h2 className="font-semibold">Consultoria Empresarial</h2>
+                    <p className="p-4  text-gray-500 text-justify md:font-semibold">
+                      Voltada para tornar a sua equipe mais engajada, produtiva e lucrativa. Agende seu horário.
+                    </p>
+                    <div className="flex  justify-between ">
+                      <Link href='/consultoria'>
+                        <div className='mt-3 bg-purple-600 text-white shadow shadow-md px-6 py-2 rounded-md text-xl'>
+                          <a>Consultoria online</a>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+
                   <div className="flex flex-col bg-blue-100 md:mr-2 h-64 rounded p-4 items-center shadow-lg border-r-8 border-purple-600 mb-4 md:mb-auto">
                     <h2 className="font-semibold">Minha Especialidade</h2>
                     <p className="p-4  text-gray-500 text-justify md:font-semibold">
@@ -94,15 +109,18 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <div className='md:w-full mt-16'>
-            <div className='mt-12 md:w-1/4 md:float-right'>
+          <div className='md:w-full mt-6'>
+            <div className='mt-4 md:w-1/4 md:float-right'>
+              <p className='text-xl md:text-2xl text-center md:text-left text-gray-600 font-semibold'>Agende a sua agora mesmo</p>
+              <p className='text-xl text-center md:text-left text-gray-600 py-2'>Vagas limitadas!</p>
               <div className='flex md:flex md:flex-row '>
-                <div className='md:w-7 w-7 md:ml-0 ml-12 opacity-80'>
-                  <Image src={facebookIcon} />
-                </div>
-                <div> <span className='text-gray-600 md:text-xl ml-1' > /lyapetry</span></div>
+                <Link href='/consultoria'>
+                  <div className='mt-3 mx-auto  bg-purple-600 text-white shadow shadow-md px-10 cursor-pointer tracking-wide py-2 rounded-md text-2xl'>
+                    <a>Consultoria online</a>
+                  </div>
+                </Link>
               </div>
-              <div className='flex md:flex md:flex-row mt-4 '>
+              <div className='flex md:flex md:flex-row mt-8 '>
                 <div className='md:w-7 w-7 md:ml-0 ml-12 opacity-80'>
                   <Image src={instagramIcon} />
                 </div>

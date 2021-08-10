@@ -1,16 +1,16 @@
-import { useState } from 'react'
+import { React, useState } from 'react'
 import { useRouter } from 'next/router'
 import styles from './Form.module.css'
-
+import InputMask from 'react-input-mask'
 import ThankYou from '../ThankYou'
 
 
-export default function Form() {
+export default function Form({ title, subtitle, textButton }) {
   const router = useRouter()
   const [form, setForm] = useState({
     Nome: '',
     Email: '',
-    //Whatsapp: '48 984270306'
+    Whatsapp: ''
   })
 
   const [loading, setLoading] = useState(false)
@@ -25,7 +25,7 @@ export default function Form() {
 
       setTimeout(() => {
         router.push('/thanks')
-      }, 2000)
+      }, 3000)
     } catch (error) {
       console.error(error)
     }
@@ -46,8 +46,8 @@ export default function Form() {
       {!loading && (
         <>
           <div>
-            <h1 className='md:text-2xl uppercase text-2xl text-center pt-6 text-white font-semibold tracking-wide'>Inscreva-se aqui</h1>
-            <h3 className=' text-center py-4 text-white tracking-wide'> e receba o convite do webinar no seu e-mail </h3>
+            <h1 className='md:text-2xl uppercase text-2xl text-center pt-6 text-white font-semibold tracking-wide'>{title}</h1>
+            <h3 className=' text-center py-4 text-white tracking-wide'>{subtitle}</h3>
           </div>
           <hr className='w-3/4 mx-auto opacity-40' />
           <div className='mt-4 md:mt-6 w-11/12 mx-auto'>
@@ -59,8 +59,11 @@ export default function Form() {
             <label htmlFor='email' className='text-white pl-8 mr-4'>email</label>
             <input className='w-10/12 ml-8 h-10 rounded-sm mt-1 mb-4 px-4' type='text' id='email' name='Email' placeholder='seu melhor email' onChange={onChangeForm} value={form.Email} />
 
+            <label htmlFor='whatsapp' className='text-white pl-8 mr-4'>whatsapp</label>
+            <InputMask mask='(99) 99999-9999' className='w-10/12 ml-8 h-10 rounded-sm mt-1 mb-4 px-4' type='text' id='email' name='Whatsapp' placeholder='seu telefone' onChange={onChangeForm} value={form.Whatsapp} />
+
             <div className='text-center py-8'>
-              <button style={{ backgroundColor: '#372667' }} className='h-12 w-11/12 uppercase md:w-9/12 text-white rounded-md text-sm md:text-md shadow shadow-md cursor-pointer px-4' onClick={save}>Inscreva-se gratuitamente</button>
+              <button style={{ backgroundColor: '#372667' }} className='h-12 w-11/12 uppercase md:w-9/12 text-white rounded-md text-sm md:text-md shadow shadow-md cursor-pointer px-4' onClick={save}>{textButton}</button>
             </div>
           </div>
         </>)}

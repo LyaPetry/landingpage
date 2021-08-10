@@ -23,7 +23,11 @@ export default function Webinar() {
             <Profile />
           </div>
           <div className='flex-1'>
-            <Form />
+            <Form
+              title='Inscreva-se aqui'
+              subtitle='e receba o link da aula no seu email'
+              textButton='inscrever-se gratuitamente'
+            />
           </div>
           <div className='flex-1'>
             <div className=' py-2'>
