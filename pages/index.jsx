@@ -50,7 +50,7 @@ export default function Index() {
                 <h3 className="hidden md:block font-bold text-2xl text-gray-700 md:mb-6">LYA PETRY</h3>
                 <p className="text-gray-600 md:text-xl mb-4 text-justify">Ajudo pessoas que acreditam no potencial de seus negócios a alavancarem seu crescimento e o crescimento das suas empresas por meio de uma abordagem comprovadamente eficaz de administrar os funcionários no dia-a-dia da empresa.</p>
 
-                <p className="text-gray-600 md:text-xl mb-4 text-justify">Acredito que gerenciar bem os empregados é determinante para o sucesso ou fracasso da sua empresa.</p>
+                <p className="text-gray-600 md:text-xl mb-4 text-justify">Acredito que gerenciar bem os colaboradores é determinante para o sucesso ou fracasso da sua empresa.</p>
 
                 <p className="text-gray-600 md:text-xl mb-2 text-justify">Empreendo com sucesso há mais de 15 anos, e aprendi a transformar custos em lucro.</p>
 

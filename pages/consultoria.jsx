@@ -69,7 +69,7 @@ export default function Consultoria() {
               <h4 className="hidden md:block text-xl text-gray-400"></h4>
               <h3 className="hidden md:block font-bold text-2xl text-gray-700 md:mb-6">Como funciona</h3>
               <p className="text-gray-600 md:text-xl mb-4 text-justify">A consultoria é composta de duas sessões de aproximadamente 90 minutos cada, agendadas previamente. São realizadas preferencialmente via aplicativo Zoom ou chamada de vídeo do Whatsapp.</p>
-              <p className="text-gray-600 md:text-xl mb-4 text-justify">A fim de potencializar a produtividade e personalizar o trabalho, antes da primeira sessão, você poderá apontar suas as maiores dificuldades e desafios. Não é obrigatório o preenchimento desse formulário, mas é altamente recomendado.</p>
+              <p className="text-gray-600 md:text-xl mb-4 text-justify">A fim de potencializar a produtividade e personalizar o trabalho, antes da primeira sessão, você poderá apontar suas as maiores dificuldades e desafios.</p>
               <p className="text-gray-600 md:text-xl mb-4 text-justify">Nosso primeiro contato será por meio do preenchimento dos dados abaixo.</p>
             </div>
           </div>
@@ -105,8 +105,8 @@ export default function Consultoria() {
       </div>
       <div className='container mx-auto mt-12'>
         <div className='bg-gray-500 text-gray-600 md:text-xl mb-4 text-justify md:w-10/12 mx-auto p-6'>
-          <h2 className=' text-white'> Por serem encontros online, ao vivo, as vagas são limitadas. Devido à grande demanda, pode ser que o atendimento ocorra em cerca de uma semana a 10 dias depois do contato. Peço a sua compreensão. </h2>
-          <h2 className=' text-white'>Contudo, tratando-se de situação que exija ação imediata na empresa, não deixe de entrar em contato. Faremos o possível para atender.</h2>
+          <h2 className='md:text-2xl text-white uppercase text-center'>Agendamento das Últimas vagas do mês.</h2>
+          <h2 className=' text-white text-center pt-4'>Preencha o formulário abaixo para garantir sua vaga ainda esse mês.</h2>
         </div>
         <div className='md:w-1/2 mx-auto my-10 md:my-16'>
           <Form
