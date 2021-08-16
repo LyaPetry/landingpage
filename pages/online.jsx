@@ -10,6 +10,10 @@ import autonomy from '../public/autonomia.jpg'
 import consultoria from '../public/newconsultoria.png'
 import calendar from '../public/newcalendario.jpg'
 import whatsapp from '../public/newwhatsapp.jpg'
+import equipe from '../public/equipe.jpg'
+import dia from '../public/dia.jpg'
+import people from '../public/people.jpg'
+
 
 const ConsultoriaOnline = () => {
   return (
@@ -18,6 +22,7 @@ const ConsultoriaOnline = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
       </Head>
       <div style={{ backgroundColor: '#372667' }} className='text-xl py-4 md:py-8 mb-4 md:mb-6'>
         <h1 className={styles.title}>Lya Petry</h1>
@@ -47,6 +52,45 @@ const ConsultoriaOnline = () => {
             </div>
           </div>
         </div>
+
+        <div className='h-auto bg-gray-400 pb-4'>
+          <h1 className='md:text-4xl text-2xl text-gray-700 text-center py-6 md:pt-12'>Alguns conteúdos abordados</h1>
+          <div className='md:flex'>
+            <div className='md:w-1/3 md:flex-col'>
+              <div className='w-10/12 mx-auto mt-6 md:mt-12'>
+                <Image src={dia} />
+              </div>
+              <p className='text-gray-600 text-center md:pb-2 md:py-4 text-xl tracking-wide my-4 text-justify px-12'><strong>Dia-a-dia na empresa.</strong>&nbsp;</p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp;Como entrevistar para seleção</p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp;Como desligar o colaborador</p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp; Respeito à hierarquia</p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp; Vínculos/Limites</p>
+            </div>
+            <div className='md:w-1/3 md:flex-col'>
+              <div className='w-10/12 mx-auto mt-12'>
+                <Image src={equipe} />
+              </div>
+              <p className='text-gray-600 md:pb-2 md:py-4 text-xl tracking-wide my-4 text-justify px-12'><strong>Dinheiro/Lucratividade.</strong> </p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp;Como aumentar a lucratividade do colaborador</p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp;O dia do pagamento</p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp; Desenvolvendo a proatividade do grupo</p>
+            </div>
+            <div className='md:w-1/3 md:flex-col'>
+              <div className='w-10/12 mx-auto mt-12'>
+                <Image src={people} />
+              </div>
+              <p className='text-gray-600 md:pb-2 md:py-4 text-xl tracking-wide my-4 text-justify px-12'><strong>Equipe/Comunicação.</strong></p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp;Resolução de conflitos</p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp;Enfrentando conversas difíceis</p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp; Como delegar tarefas</p>
+              <p className='mt-2 ml-6 md:ml-12 text-gray-600 tracking-wide text-xl'><i className='bi bi-check-all'></i>&nbsp; Comunicação efetiva</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.video}>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/wdjfst1OAhg?controls=0" title="Os pilares da Consultoria" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </div>
+
         <div className='h-auto bg-gray-300 pb-4'>
           <h1 className='md:text-4xl text-2xl text-gray-700 text-center py-6 md:pt-12'>Os pilares dessa Consultoria</h1>
           <div className='md:flex'>
