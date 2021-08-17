@@ -13,6 +13,7 @@ import whatsapp from '../public/newwhatsapp.jpg'
 import equipe from '../public/equipe.jpg'
 import dia from '../public/dia.jpg'
 import people from '../public/people.jpg'
+import price from '../public/price.png'
 
 
 const ConsultoriaOnline = () => {
@@ -141,6 +142,12 @@ const ConsultoriaOnline = () => {
               <p className='text-gray-200 md:py-10 text-xl md:text-2xl tracking-wide my-4 text-justify px-6 md:px-12 md:leading-9'>No período da Consultoria, questões pontuais poderão ser tratadas diretamente com a especialista, via whatsapp. Haverá suporte e contato para sanar dúvidas e situações pontuais que porventura surjam durante o período da Consultoria.
               </p>
             </div>
+          </div>
+        </div>
+        <div className='h-auto mx-auto w-full bg-gray-600 py-12'>
+          <h2 className='text-gray-100 text-center text-2xl md:text-4xl'>Preço por tempo limitado</h2>
+          <div className='h-auto mx-auto w-3/5 md:w-1/3 py-6 md:py-12'>
+            <Image src={price} alt='preço' />
           </div>
         </div>
         <div className='h-auto bg-gray-300 pb-12'>
