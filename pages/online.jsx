@@ -13,7 +13,7 @@ import whatsapp from '../public/newwhatsapp.jpg'
 import equipe from '../public/equipe.jpg'
 import dia from '../public/dia.jpg'
 import people from '../public/people.jpg'
-import price from '../public/price.png'
+import newPrice from '../public/price.png'
 
 
 const ConsultoriaOnline = () => {
@@ -147,7 +147,7 @@ const ConsultoriaOnline = () => {
         <div className='h-auto mx-auto w-full bg-gray-600 py-12'>
           <h2 className='text-gray-100 text-center text-2xl md:text-4xl'>Preço por tempo limitado</h2>
           <div className='h-auto mx-auto w-3/5 md:w-1/3 py-6 md:py-12'>
-            <Image src={price} alt='preço' />
+            <Image src={newPrice} alt='preço' />
           </div>
         </div>
         <div className='h-auto bg-gray-300 pb-12'>
