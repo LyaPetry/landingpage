@@ -13,7 +13,7 @@ import whatsapp from '../public/newwhatsapp.jpg'
 import equipe from '../public/equipe.jpg'
 import dia from '../public/dia.jpg'
 import people from '../public/people.jpg'
-import newPrice from '../public/price.png'
+import newPrice from '../public/newPrice.png'
 
 
 const ConsultoriaOnline = () => {
