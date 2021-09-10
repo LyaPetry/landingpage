@@ -32,7 +32,7 @@ export default function Index() {
   const { data, error } = useSWR('/api/get-message', fetcher)
 
   useEffect(() => {
-    setMessage('Fundadora e Administradora da Net Link ')
+    setMessage('Fundadora e Administradora da Rede Net Link ')
   }, [])
 
   const visibleCarrer = () => {
@@ -54,7 +54,8 @@ export default function Index() {
 
   return (
     <div className=''>
-      <div>
+      {/* message from google spreadsheet 
+        <div>
         {!data && <p>Carregando...</p>}
         {!error && data && data.showMessage &&
           <>
@@ -66,7 +67,7 @@ export default function Index() {
             </div>
           </>
         }
-      </div>
+      </div> */}
       <div>
 
 
@@ -136,7 +137,7 @@ export default function Index() {
         titleCardTwo='Minha Formação'
         textCardTwo='Sou formada em Administração de Empresas - Ênfase em Marketing - Centro Universitário Vale do Iguaçu - União da Vitória - PR'
         titleCardThree='Meu Mestrado'
-        textCardThree='Em 2020, terminei meu Mestrado Internacional em Administração e Direção de Empresas - Universidad Europea del Atlantico - Espanha'
+        textCardThree='Mestrado Internacional em Administração e Direção de Empresas - Universidad Europea del Atlantico - Espanha'
         founder={founder}
         cardImage1="https://live.staticflickr.com/65535/51431756640_c5936ab94b_z.jpg"
         cardImage2="https://live.staticflickr.com/65535/51431022258_dfb46e15c3_z.jpg"
